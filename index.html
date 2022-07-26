@@ -1,30 +1,209 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Personal Webpage of Jason Standfast</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <title>Jason Standfast - Personal Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/q.css">
+      <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+      </style>
   </head>
-  
   <body>
-    <!-- NAVIGATION -->
-    <div class='w3-bar w3-black'>
-      
-      <span class='w3-center w3-mobile'>
-        <a class='w3-bar-item w3-mobile w3-hover-gray' href='#'>Home</a>
-        <a class='w3-bar-item w3-mobile w3-hover-gray' href='#about'>About</a>
-        <a class='w3-bar-item w3-mobile w3-hover-gray' href='#projects'>Projects</a>
-        <a class='w3-bar-item w3-mobile w3-hover-gray' href='#contact'>Contact</a>
-      </span>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="q-uppercase w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="#about" class="q-uppercase w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+      <a href="#projects" class="q-uppercase w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
+      <a href="#contact" class="q-uppercase w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#about" class="q-uppercase w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    <a href="#projects" class="q-uppercase w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
+    <a href="#contact" class="q-uppercase w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Main Image -->
+    <div class="w3-display-container w3-center">
+      <a href="https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-reveals-cosmic-cliffs-glittering-landscape-of-star-birth" target=”_blank”><img src="img/background1.png" style="width:100%"></a>
+      <div class="w3-animate-opacity w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h1>"Cosmic Cliffs"</h1>
+        <p><i>I am celebrating NASA's James Webb Space Telescope and its achievements</i></p>   
+      </div>
+    </div>
+    
+
+    <!-- About Section -->
+    <div class="w3-animate-opacity w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+      <h2 class="q-uppercase w3-wide">About</h2>
+      <p class="w3-opacity"><i>I love science and technology</i></p>
+      <p class="w3-justify">My name is Jason Standfast. I am currently completing my undergraduate studies at SUNY Old Westbury; I am pursuing a Bachelor of Science in Computer Science. I have 10 years of professional experience in the mortgage industry as an analyst, processor, sales rep, and assistant senior vice president. I bring skills in customer service, communication, management, and organization to the field of computer science. I am using my skills to produce dynamic web content and backend solutions.</p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-center">
+          <h3>Jason Standfast</h3>
+          <img src="img/profile.jpg" class="w3-round w3-margin-bottom" alt="Profile Picture of Jason Standfast" style="width:60%">
+        </div>
+      </div>
     </div>
 
-    <section class='showcase'>
-      <div class='w3-container w3-center'>
-        <h1 class='w3-text-white w3-animate-opacity'>Jason Standfast</h1>
-        <p class='w3-text-white w3-animate-opacity w3-t'
-        
-        <button class='w3-button w3-black w3-opacity w3-medium w3-animate-opacity'>Contact Me</button>
-      </div>
-    </section>
+    <!-- Projects Section -->
+    <div class="w3-black w3-animate-opacity" id="projects">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="q-uppercase w3-wide w3-center">Projects</h2>
+        <p class="w3-opacity w3-center"><i>Planned:</i></p>
 
-    <p>Includes CSS template from W3school.com (https://www.w3schools.com/w3css/4/w3.css) and use of NASA's JWST Image of "Cosmic Cliffs" (https://webbtelescope.org/contents/news-releases/2022/news-2022-031)</p>
+        <ul class="w3-ul w3-border w3-white w3-text-grey">
+          <li class="w3-padding w3-text-black">August 2022: <span class="w3-white w3-text-grey w3-margin-left w3-right">Home Automation System & Additional Web Content</span></li>
+          <li class="w3-padding w3-text-black">September 2022: <span class="w3-white w3-text-grey w3-margin-left w3-right">Home Automation System & Additional Web Content</span></li>
+          <li class="w3-padding w3-text-black">October 2022: <span class="w3-white w3-text-grey w3-margin-left w3-right">Home Automation System & Additional Web Content</span></li>
+        </ul>
+
+
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <p class="w3-opacity w3-center"><i>Completed/In progress:</i></p>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/quantifyuniversity.png" alt="Quantify University" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Quantify University</b></p>
+              <p class="w3-opacity">Completed May 2022</p>
+              <p>MySQL, PHP, CSS, HTML, and a little bit of Javascript to produce a fully functioning college registration system.</p>
+              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">View</button>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/comingsoon.png" alt="Coming Soon" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Will Add Later</b></p>
+              <p class="w3-opacity">2022</p>
+              <p>I have a few projects to put here once I have them on Github.</p>
+              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">View</button>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/comingsoon.png" alt="Coming Soon" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Will Add Later</b></p>
+              <p class="w3-opacity">2022</p>
+              <p>I have a few projects to put here once I have them on Github.</p>
+              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-grey w3-center w3-padding-32"> 
+          <span onclick="document.getElementById('ticketModal').style.display='none'" 
+         class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        </header>
+        <div class="w3-container">
+          <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="How many?">
+          <p><label><i class="fa fa-user"></i> Send To</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Enter email">
+          <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+          <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+          <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Contact me directly or send a message</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i> Huntington, NY<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: (631) 521-6724<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:jason@quantifyny.com">jason@quantifyny.com</a><br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  <!-- End Page Content -->
+  </div>
+
+  <!-- Image of location/map -->
+  <img src="img/cliffs2.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
   </body>
 </html>
