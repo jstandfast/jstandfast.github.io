@@ -1,22 +1,12 @@
-.q-showcase {
-	background: url('../img/background1.png') no-repeat; 
-	margin-left: auto; 
-	margin-right: auto; 
-	margin-top: auto; 
-	height: 520px; 
-	width: 100%; 
-	background-position: center;
-}
 .q-uppercase {
 	text-transform: uppercase;
 }
 .q-reveal {
-	position: relative;
-	transform: translateY(150px);
 	opacity: 0;
-	transition: 2s all ease;
+	
 }
 .q-reveal.active {
-	transform: translateY(0);
+	transform: translateY(-20px);
 	opacity: 1;
+	transition: 1s all ease;
 }
