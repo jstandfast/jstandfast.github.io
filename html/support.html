@@ -32,20 +32,20 @@
           <form action="../php/message.php" method="post">
             <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
               <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                <input name="fullname" class="w3-input w3-border" type="text" placeholder="Name" required>
               </div>
               <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                <input name="email" class="w3-input w3-border" type="text" placeholder="Email" required>
               </div>
             </div>
-            <textarea class="w3-input w3-border" placeholder="Message" style="height:200px; padding: 12px; resize: vertical;" required name="Message"></textarea>
-            <input class="w3-check" type="checkbox" name="issue">
-            <label>There is an issue.</label>
-            <input class="w3-check" type="checkbox" name="feedback">
-            <label>I am leaving feedback.</label>
-            <input class="w3-check" type="checkbox" name="other">
-            <label>Other.</label>
-            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            <textarea name="message" class="w3-input w3-border" placeholder="Message" style="height:200px; padding: 12px; resize: vertical;" required></textarea>
+            <input name="issue" class="w3-check" type="checkbox">
+            <label>Issue</label>
+            <input name="feedback" class="w3-check" type="checkbox">
+            <label>Feedback</label>
+            <input name="other" class="w3-check" type="checkbox">
+            <label>Other</label>
+            <button class="w3-button w3-black w3-section w3-right q-uppercase" type="submit">Send</button>
           </form>
         </div>
       </div>

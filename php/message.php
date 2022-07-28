@@ -29,39 +29,47 @@
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-      <?php
-
-        $name = $_POST['fullname'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $type;
-
-        if(isset($_POST['type'])) {
-          $type = $_POST['type'];
-        } else {
-          $type = "default";
-        }
-
-        echo $name;
-        echo $email;
-        echo $message;
-        echo $type;
-
-      ?>
-      
       <!-- Main Support Section -->
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="support">
-        <h2 class="q-uppercase w3-wide">Message Sent</h2>
-        <p class="w3-justify">Thank you for sending a message. We will respond within 48 hours.</p>
-        <div class="w3-row-padding w3-container w3-content">
-          <?php
-            echo $name;
-            echo $email;
-            echo $message;
-            echo $type;
-          ?>
-        </div>
-      </div>
+
+        <?php
+
+          $con = connectToDB();
+
+          $name = $_POST['fullname'];
+          $email = $_POST['email'];
+          $message = htmlspecialchars($_POST['message']);
+          $type ="";
+
+          if(isset($_POST['issue']) || isset($_POST['feedback']) || isset($_POST['other'])) {
+            if(isset($_POST['issue'])) {
+              $type .= "issue*";
+            } else if(isset($_POST['feedback'])) {
+              $type .= "feedback*";
+            } else {
+              $type .= "other*";
+            }
+          } else {
+            $type = "default*";
+          }
+
+          if(addMessageToDB($con,$name,$email,$message,$type)) {
+            echo "<h2 class='q-uppercase w3-wide'>Message Sent</h2>
+                <p class='w3-justify w3-center'>Thank you for sending a message. We will respond within 48 hours.</p>
+                <p class='w3-justify w3-center'>Here is a transcript of your message to JasonStandfast.com:</p>
+                <p><i>". $message . "</i></p>
+              </div>";
+          } else {
+            echo "<h2 class='q-uppercase w3-wide'>Something Went Wrong</h2>
+                <p class='w3-justify w3-center'>Thank you for sending a message. We will respond within 48 hours.</p>
+                <p class='w3-justify w3-center'>Here is a transcript of your message to JasonStandfast.com:</p>
+                <p><i>" . $message . "</i></p>
+              </div>";
+          }
+
+          $con->close();
+
+        ?>
 
     <!-- End Page Content -->
     </div>
