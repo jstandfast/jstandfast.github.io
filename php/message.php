@@ -26,28 +26,8 @@
       
       <!-- Main Support Section -->
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="support">
-        <h2 class="q-uppercase w3-wide">Support</h2>
-        <p class="w3-justify">Please send a message using the form below if you need support or wish to register any feedback:</p>
-        <div class="w3-col m12">
-          <form action="../php/message.php" method="post">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-              </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-              </div>
-            </div>
-            <textarea class="w3-input w3-border" placeholder="Message" style="height:200px; padding: 12px; resize: vertical;" required name="Message"></textarea>
-            <input class="w3-check" type="checkbox" name="issue">
-            <label>There is an issue.</label>
-            <input class="w3-check" type="checkbox" name="feedback">
-            <label>I am leaving feedback.</label>
-            <input class="w3-check" type="checkbox" name="other">
-            <label>Other.</label>
-            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-          </form>
-        </div>
+        <h2 class="q-uppercase w3-wide">Message Sent</h2>
+        <p class="w3-justify">Thank you for sending a message. We will respond within 48 hours.</p>
       </div>
 
     <!-- End Page Content -->
