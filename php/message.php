@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php
+  include 'q-functions.php';
+?>
+
 <html lang="en">
   <head>
     <title>Support Page - JasonStandfast.com</title>
@@ -23,11 +28,39 @@
 
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+      <?php
+
+        $name = $_POST['fullname'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $type;
+
+        if(isset($_POST['type'])) {
+          $type = $_POST['type'];
+        } else {
+          $type = "default";
+        }
+
+        echo $name;
+        echo $email;
+        echo $message;
+        echo $type;
+
+      ?>
       
       <!-- Main Support Section -->
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="support">
         <h2 class="q-uppercase w3-wide">Message Sent</h2>
         <p class="w3-justify">Thank you for sending a message. We will respond within 48 hours.</p>
+        <div class="w3-row-padding w3-container w3-content">
+          <?php
+            echo $name;
+            echo $email;
+            echo $message;
+            echo $type;
+          ?>
+        </div>
       </div>
 
     <!-- End Page Content -->

@@ -1,0 +1,22 @@
+        echo "Test 1";
+
+        $host="127.0.0.1";
+        $port=3306;
+        $socket="";
+        $user="root";
+        $password="111111";
+        $dbname="jasonstandfast.com_messages";
+
+        echo "Test 2";
+
+        $con = new mysqli_connect($host, $user, $password, $dbname, $port, $socket)
+            or die ('Could not connect to the database server' . mysqli_connect_error());
+
+        echo "Test 3";
+
+        if(!mysqli_select_db($con,$dbname))
+            die("<p>Could not open database.</p></body></html>");
+
+        echo "Test 4";
+
+		$con->close();
