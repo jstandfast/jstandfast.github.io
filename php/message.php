@@ -44,11 +44,16 @@
           if(isset($_POST['issue']) || isset($_POST['feedback']) || isset($_POST['other'])) {
             if(isset($_POST['issue'])) {
               $type .= "issue*";
-            } else if(isset($_POST['feedback'])) {
+            }
+
+            if(isset($_POST['feedback'])) {
               $type .= "feedback*";
-            } else {
+            } 
+
+            if(isset($_POST['other'])) {
               $type .= "other*";
             }
+            
           } else {
             $type = "default*";
           }
