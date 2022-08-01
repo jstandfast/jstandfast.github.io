@@ -1,0 +1,12 @@
+.q-uppercase {
+	text-transform: uppercase;
+}
+.q-reveal {
+	opacity: 0;
+	
+}
+.q-reveal.active {
+	transform: translateY(-20px);
+	opacity: 1;
+	transition: 1s all ease;
+}
