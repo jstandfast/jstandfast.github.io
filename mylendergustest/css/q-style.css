@@ -10,3 +10,30 @@
 	opacity: 1;
 	transition: 1s all ease;
 }
+
+.q-goldenrod,.q-goldenrod:hover{color:#fff!important;background-color:#DAA520!important}
+.q-pale-blue,.q-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+
+.q-fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.q-fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.q-img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 200px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.q-img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}

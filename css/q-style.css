@@ -10,3 +10,6 @@
 	opacity: 1;
 	transition: 1s all ease;
 }
+
+.q-goldenrod,.w3-goldenrod:hover{color:#fff!important;background-color:#daa520!important}
+.q-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
