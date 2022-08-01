@@ -60,10 +60,10 @@
 
     <!-- More information -->
     <!-- Video Slideshow -->
-    <div class="w3-container w3-padding-64 w3-center w3-grey" id="about">
-      <div class="w3-content w3-panel w3-border w3-hover-shadow">
-      <h1 class="w3-center w3-text-white"><b>Information</b></h1>
-        <h3 class="w3-center w3-text-white"><b>Videos</b></h3>
+    <div class="w3-container w3-padding-64 w3-center w3-grey" id="info">
+      <div class="w3-content w3-panel w3-border w3-hover-shadow w3-white w3-text-black">
+      <h1 class="w3-center"><b>Information</b></h1>
+        <h3 class="w3-center"><b>Videos</b></h3>
         <div class="w3-content w3-dark-grey w3-content w3-panel w3-border w3-hover-shadow" style="max-width:464px;margin-top:20px;margin-bottom:20px">
           <div class="w3-display-container mySlides">
             <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fgusmortgage%2Fvideos%2F2402776676687547%2F&show_text=false&width=476&t=0" width="420" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
@@ -88,7 +88,7 @@
           </div>
         </div>
 
-        <h3 class="w3-center w3-text-white"><b>Gallery</b></h3>
+        <h3 class="w3-center"><b>Gallery</b></h3>
         <div class="w3-row">
           <div class="w3-quarter q-fill">
             <img onclick="document.getElementById('img1').style.display='block'" class="q-img" src="../img/procedure.jpg" style="width: 200px;">
@@ -220,37 +220,78 @@
         <div class="w3-content w3-panel w3-border w3-hover-shadow">
           <h1>Contact me today!</h1>
           <p class="w3-xlarge">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-amber w3-text-black w3-hover-opacity-off" style="padding:8px 60px">Click Here</button>
           </p>
         </div>
 
-        <!-- RSVP modal -->
+        <!-- Contact modal -->
         <div id="id01" class="w3-modal">
           <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-            <div class="w3-container w3-white w3-center">
-              <h1 class="w3-wide">CAN YOU COME?</h1>
-              <p>We really hope you can make it.</p>
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
               <form>
-                <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+                <h2>Input Some Information</h2>
+                <div class="w3-half">
+                  <div class="w3-section">      
+                    <input class="w3-input" type="text" required>
+                    <label>First Name</label>
+                  </div>
+                  <div class="w3-section">      
+                    <input class="w3-input" type="text" required>
+                    <label>Phone Number</label>
+                  </div>
+                </div>
+
+                <div class="w3-half">
+                  <div class="w3-section">      
+                    <input class="w3-input" type="text" required>
+                    <label>Last Name</label>
+                  </div>
+                  <div class="w3-section">      
+                    <input class="w3-input" type="text" required>
+                    <label>Email</label>
+                  </div>
+                </div>
+
+                <div class="w3-row">
+                  <div class="w3-half w3-left-align w3-panel">
+                    <p>How would you like to be contacted?</p>
+                    <input id="milk" class="w3-check" type="checkbox" checked="checked">
+                    <label>Phone Call</label>
+                    <br>
+                    <input id="sugar" class="w3-check" type="checkbox">
+                    <label>Text</label>
+                    <br>
+                    <input id="lemon" class="w3-check" type="checkbox">
+                    <label>Email</label>
+                    <br><br>
+                  </div>
+
+                  <div class="w3-half w3-left-align w3-panel">
+                    <p>What are most you interested in?</p>
+                    <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
+                    <label>Home Mortgage</label>
+                    <br>
+                    <input id="female" class="w3-radio" type="radio" name="gender" value="female">
+                    <label>Construction Loan</label>
+                    <br>
+                    <input id="unknown" class="w3-radio" type="radio" name="gender" value="">
+                    <label>Commercial Loan</label>
+                  </div>
+                </div>
+                <div class="w3-row">
+                  <button class="w3-button w3-black w3-section w3-right q-uppercase" type="submit">Send</button>
+                  <button class="w3-button w3-black w3-section w3-right q-uppercase" type="reset">Reset</button>
+                </div>
               </form>
-              <p><i>Sincerely, John & Jane</i></p>
-              <div class="w3-row">
-                <div class="w3-half">
-                  <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-                </div>
-                <div class="w3-half">
-                  <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
     
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-16">
-      <p><a class="w3-hover-text-red" href="https://www.facebook.com/gusmortgage" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook-official w3-hover-opacity"></i> Connect with me on Facebook</a>
-      <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-red" style="text-decoration: none;">Powered by w3.css</a></p>
+      <p><a class="w3-hover-text-amber" href="https://www.facebook.com/gusmortgage" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook-official w3-hover-opacity"></i> Connect with me on Facebook</a>
+      <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-amber" style="text-decoration: none;">Powered by w3.css</a></p>
     </footer>
 
     <script>
